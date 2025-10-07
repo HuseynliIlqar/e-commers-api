@@ -17,63 +17,8 @@ This project is an e-commerce API built with Node.js, Express, and MongoDB. It p
 * **Payment Integration (Placeholder):** Designed to be extensible for integrating various payment gateways.
 * **Admin Panel (API-driven):** Provides endpoints for administrative tasks such as managing users, products, and orders.
 
----
-
-### Technologies Used
-
-* **Node.js:** JavaScript runtime environment.
-* **Express.js:** Fast, unopinionated, minimalist web framework for Node.js.
-* **MongoDB:** NoSQL database for flexible and scalable data storage.
-* **Mongoose:** MongoDB object data modeling (ODM) for Node.js.
-* **JWT (JSON Web Tokens):** For secure authentication and authorization.
-* **Bcrypt.js:** For hashing passwords securely.
-* **Dotenv:** For loading environment variables.
-* **Nodemon:** For automatic server restarts during development.
 
 ---
-
-### Getting Started
-
-#### Prerequisites
-
-* Node.js installed (LTS version recommended)
-* MongoDB installed and running, or access to a MongoDB Atlas cluster
-
-#### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/HuseynliIlqar/e-commers-api.git
-    cd e-commers-api
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-3.  **Create a `.env` file in the root directory** and add the following environment variables:
-    ```
-    PORT=5000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key
-    ```
-    * `PORT`: The port your API will run on.
-    * `MONGO_URI`: Your MongoDB connection string (e.g., `mongodb://localhost:27017/ecommerce` or your MongoDB Atlas URI).
-    * `JWT_SECRET`: A strong, random string used to sign your JWTs.
-
-#### Running the API
-
-* **Development mode (with Nodemon):**
-    ```bash
-    npm run dev
-    ```
-* **Production mode:**
-    ```bash
-    npm start
-    ```
-
-The API will be running at `http://localhost:PORT` (e.g., `http://localhost:5000`).
 
 ---
 
@@ -105,24 +50,6 @@ Example structure:
 
 ---
 
-### Project Structure
-
-(This section describes the typical directory structure of the project. Adjust according to your actual project structure.)
-
-```
-e-commers-api/
-├── config/              # Database connection and other configurations
-├── controllers/         # Logic for handling API requests
-├── models/              # Mongoose schemas and models
-├── routes/              # API routes
-├── middleware/          # Authentication and authorization middleware
-├── utils/               # Utility functions (e.g., error handling)
-├── .env                 # Environment variables
-├── .gitignore           # Specifies intentionally untracked files to ignore
-├── package.json         # Project metadata and dependencies
-├── server.js            # Main application entry point
-├── README.md            # Project README
-```
 
 ---
 
